@@ -1,3 +1,51 @@
 body {
-    background-color: azure;
+  display: flex;
+  background-color: white;
+  .header {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    .header_left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      .logo {
+        padding: 25px 0 0 50px;
+      }
+      img {
+        width: 132px;
+        height: 54px;
+        padding: 0 0 0 50px;
+      }
+      .header_nav {
+        background-color: white;
+        margin: 0px 10px;
+        padding: 3px 0px 0px 10px;
+
+        ul {
+          display: flex;
+          list-style: none;
+
+          li {
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+            margin: 25px;
+          }
+        }
+      }
+    }
+    .header_right {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      .button_container {
+        display: flex;
+        button {
+          width: 120px;
+          height: 35px;
+          background-color: red;
+        }
+      }
+    }
+  }
 }
